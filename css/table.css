@@ -118,7 +118,7 @@ color: var(--navyblue-headlines);
     color: var(--iris);
 }
 .piro-menu {
-    opacity: 0;
+    display: none;
 }
   /* _____________Section 1 - hero */
 .hero{
