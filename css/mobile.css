@@ -1,0 +1,267 @@
+@media screen and (min-width: 480px) {
+    .container{
+        max-width: 428px;
+    }
+/* HEADER_______________________________________________________________________- */
+.piro-menu {
+left: 400px;
+}
+/*_____________________________mob-menu_____________________________________________________*/
+.mobile-link {
+    font-size: 36px;
+    }
+.header-mob-tell {
+font-size: 30px;
+}
+.header-mob-gmail {
+font-size: 20px;
+}
+.mobile-list{
+    padding-top: 80px;
+}
+.mob-soc-list {
+    display: flex;
+    gap: 56px;
+}
+/* _____________Section 1 - hero */
+.hero{
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.4 ),
+        rgba(46, 47, 66, 0.4 )),
+        url(../img/tablete\ \(1\).jpg);
+}
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+    background-image: url(../img/table-2x\ \(1\).jpg);
+    }
+}
+.hero-text{
+    font-size: 36px;
+line-height: 1.1;
+margin-bottom: 72px;
+}
+/* ______________________Section 4 _____________________*/
+.section-oure{
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background:var(--cloud);
+    padding-right: 50px;
+    padding-left: 100px;
+}
+
+/* ______________________Section 5 _____________________*/
+    .customers-list {
+    gap: 16px;
+    margin-bottom: 72px;
+    }
+    .customers-item {
+    flex-basis: calc((100% - 1 * 16px) / 2);
+    }
+/*______________________ footer */
+
+.footer {
+    background-color:var(--layout-paragrph);
+    padding-top: 96px;
+    padding-bottom: 96px;
+    }
+    .footer-container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+.footer-logo{
+    margin-left: 140px;
+}
+.footer-parag{
+    margin-left: 70px;
+margin-bottom: 72px;
+}
+.soc{
+margin-left: 80px;
+}
+.button-input-footer{
+margin-left: 30%;
+}
+.imput-title{
+margin-left: 150px;
+}
+.online-footer{
+    width: 398px;
+    height: 40px;
+}
+/*____________________________ modal __________________________________*/
+.modal {
+top: 60%;
+}
+/*____________________________ modal __________________________________*/
+.back-modal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50%;
+    background: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal {
+    position: absolute;
+    width: 408px;
+    height: 576px;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    background-color:var(--modal);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.back-modal.is-hidden.modal{
+    transform: translate(-50%,-50%) scale(0);
+}
+.modal-clous{
+    width: 24px;
+    height: 24px;
+    background:var(--modal-clouse);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-color: var(--clouse-x);
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-clous:hover,
+.modal-clous:focus{
+background-color:var(--ocean);
+}
+.modal-clous:is(:hover,:focus) {
+    fill:var(--cloud) ;
+}
+.modal-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--modal-f);
+margin-bottom: 16px;
+}
+.inpun-wrap{
+    position: relative;
+}
+.modal-input::placeholder .modal-comment::placeholder{
+    color: var(--iris)
+}
+.modal-input-icon{
+    position: absolute;
+    left: 16px;
+    top: 40%;
+    transform:translateY(-40%);
+}
+.modal-input{
+    width: 360px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    font-size: 12px;
+    padding-left: 35px;
+    margin-bottom: 8px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus,
+.modal-comment:focus{
+    border-color: var(--iris);
+}
+.modal-input:focus + .modal-input-icon{
+    fill: var(--iris);
+}
+.modal-imput-text{
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    color: var(--modal-text);
+    margin-bottom: 5px;
+    display: block;
+    }
+.modal-comment{
+width: 100%;
+height: 120px;
+left: 0px;
+top: 216px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding: 10px;
+resize: none;
+outline: transparent;
+margin-bottom: 16px;
+}
+.check-text{
+    font-size: 14px;
+    font-weight: 600px;
+    color:var(--check-text);
+    display: flex;
+    }
+.check-text::before{
+content: '';
+width: 16px;
+height: 16px;
+border: 1.25px solid var(--modal-f);
+border-radius: 2px;
+margin-right: 8px;
+margin-right: 8px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-chek:checked +  .check-text::before{
+    background-color:var(--ocean);
+    border: none;
+    background-image: url(../images/icons.svg/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text-chec{
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.04em;
+color: var(--che-t);
+}
+.text-privat{
+    font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.04em;
+text-decoration-line: underline;
+color: var(--iris);
+margin-left: 2px;
+margin-bottom: 18px;
+}
+.button-send{
+font-size: 16px;
+line-height: 1.5;
+color: var(--send-butt);
+    width: 169px;
+    height: 56px;
+background-color: var(--iris);
+cursor: pointer;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+display: block;
+margin: 0 auto;
+border: none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-send:hover,
+.button-send:focus{
+background-color:var(--ocean);
+}
+
+
+
+}

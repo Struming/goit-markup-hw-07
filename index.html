@@ -16,10 +16,13 @@
     referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/desktop.css">
 </head>
 <body>
     <header class="header">
-        <div class="container  header-container">
+        <div class="container   header-container-min">
         <nav class="header-navigation">
             <a href="./index.html" class="header-logo link"> Web<span class="colortext-logo">Studio</span>  </a> 
             <ul class="header-list list">
@@ -38,11 +41,83 @@
                 </li> 
             </ul>
         </address>
+        <button class="piro-menu" type="button" data-menu-open>
+            <svg class="hamburger-butt" width="32" height="32" >
+                <use href="/images/icon.ham.svg/symbol-defs.svg#icon-charm_menu-hamburger-1"></use>
+            </svg>
+        </button>
         </div>
+<!--______________________________mob-menu____________________________________________-->
+        <div class="mobile-menu is-hidden" data-menu>
+            <div class="container">
+                <div>
+                <button class="mobile-clous" type="button" data-menu-close>
+                    <svg class="modal-x" width="8" height="8">
+                    <use href="./images/svg.X/symbol-defs.svg#icon-Vector-1"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-navigation">
+                    <ul class="mobile-list list">
+                        <li class="mobile-item"><a href="index.html" class="mobile-link link current" id="studio">Studio</a></li>
+                        <li class="mobile-item"><a href="portfolio.html" class="mobile-link link " id="portfolio">Portfolio</a></li>
+                        <li class="mobile-item"><a href="" class="mobile-link link ">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <div>
+            <address class="mob-address">
+        <ul class="mob-address-list list">
+        <li>
+        <a href="tel:+110001111111" class="header-mob-tell link " >  +11 (000) 111-11-11</a>
+        </li> 
+        <li>
+        <a href="mailto:info@devstudio.com" class="header-mob-gmail link " > info@devstudio.com</a>
+        </li>
+        </ul>
+</address>
+<div class="soc-mob">
+    <ul class="mob-soc-list list">
+        <li class="mob-soc-item">
+            <a href="" class="mobile-soc-link link">
+                <svg class="mobile-icon" width="24" height="24">
+                    <use href="./images/icons.svg/1 def-inst.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="mob-soc-item">
+            <a href="" class="mobile-soc-link link">
+                <svg class="mobile-icon" width="24" height="24">
+                    <use href="./images/icons.svg/1 def-inst.svg#icon-twitter-1-1"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="mob-soc-item">
+            <a href="" class="mobile-soc-link link">
+                <svg class="mobile-icon" width="24" height="24">
+                    <use href="./images/icons.svg/1 def-inst.svg#icon-Vector-1"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="mob-soc-item">
+            <a href="" class="mobile-soc-link link">
+                <svg class="mobile-icon" width="24" height="24">
+                    <use href="./images/icons.svg/1 def-inst.svg#icon-linkedin-1-1"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+    </div> 
+</div>
+</div>
+
+
+
+</div>
+
     </header>
     <main>
     <!--Секція 1-->
-        <section class="hero"> 
+    <section class="hero"> 
         <div class="container">
         <h1 class="hero-text"> Effective Solutions   <br> for Your Business</h1>
     </div>
@@ -51,7 +126,7 @@
         </div>
         </section>
     <!--Секція 2-->
-    <section class="section "> 
+<section class="section "> 
         <div class="container  work-one">
         <h2  class="visually-hidden"> Перелік вакансій</h2>
         <ul class="work-list list">
@@ -95,7 +170,7 @@
         </div>
     </section>
     <!-- Секція 3-->
-    <section class="section">
+        <section class="section">
         <div class="container">
     <h2 class="photo-text">What are we doing</h2>
     <ul class="photo-list list">
@@ -107,11 +182,12 @@
 </section> 
 <!--Секція 4-->
     <section class="section-oure"> 
-        <div class="container ">
+        <div class="container">
     <h2 class="title-our-time">Our Team</h2>
-    <ul class="resume-list list">
-        <li class="resume-itm">
-            <img src="./images/img-mark.jpg" alt="img-mark" width="264">
+    <ul class="resume-list  list">
+        <li class="resume-itm ">
+            <img src="./images/img-mark.jpg" alt="img-mark"
+            width="264">
             <div class="content-resume">
             <h3 class="resume">Mark Guerrero</h3>
             <p class="paragraph-resume">Product Designer</p>
@@ -149,7 +225,8 @@
         </div>
         </li>
         <li class="resume-itm">
-            <img src="./images/img-tom.jpg" alt="img-tom" width="264">
+            <img src="./images/img-tom.jpg" alt="img-tom"
+            width="264">
             <div class="content-resume">
             <h3 class="resume">Tom Ford</h3>
             <p class="paragraph-resume">Frontend Developer</p>
@@ -187,7 +264,8 @@
         </div>
         </li>
         <li class="resume-itm">
-            <img src="./images/img-camila.jpg" alt="img-camila" width="264">
+            <img src="./images/img-camila.jpg" alt="img-camila"
+            width="264">
             <div class="content-resume">
             <h3 class="resume">Camila Garcia</h3>
             <p class="paragraph-resume">Marketing</p>
@@ -225,7 +303,8 @@
         </div>
         </li>
         <li class="resume-itm">
-            <img src="./images/img-daniel.jpg" alt="img-daniel" width="264">
+            <img src="./images/img-daniel.jpg" alt="img-daniel" 
+            width="264">
             <div class="content-resume">
             <h3 class="resume">Daniel Wilson</h3>
             <p class="paragraph-resume">UI Designer</p>
@@ -321,8 +400,8 @@
     <footer class="footer">
         <div class="container footer-container imput-container">
         <div class="mer">
-        <a href="./index.html" class="header-logo link"> Web<span class="colortext">Studio</span>  </a> 
-        <p class="footer-parag">Increase the flow of customers  <br> and sales for your 
+        <a href="./index.html" class="footer-logo link"> Web<span class="colortext">Studio</span>  </a> 
+        <p class="footer-parag">Increase the flow of customers   and <br> sales for your 
         business with digital <br> marketing & growth solutions.</p>
     </div>
     <div class="soc">
@@ -432,6 +511,7 @@
     </div>
     </div>
     <script src="./img/js/modal.js"></script>
+    <script src="./img/js/menu.js"></script>
     </body>
 </html>
 
