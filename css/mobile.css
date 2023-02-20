@@ -3,9 +3,20 @@
         max-width: 428px;
     }
 /* HEADER_______________________________________________________________________- */
-.piro-menu {
-left: 400px;
+.header-container-min{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    
 }
+.piro-menu {
+    position: relative;
+    border: none;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    }
 /*_____________________________mob-menu_____________________________________________________*/
 .mobile-link {
     font-size: 36px;
@@ -70,9 +81,6 @@ margin-bottom: 72px;
 .online-footer{
     width: 398px;
     height: 40px;
-}
-.button-input-footer{
-margin-left: 120px;
 }
 /*____________________________ modal __________________________________*/
 .modal {

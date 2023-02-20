@@ -70,11 +70,12 @@ img{
 --fill: #8e8f99
 }
 /* __________________________________________________HEADER_______________________________________________________________________- */
-.header-container{
+.header-container-min{
     display: flex;
     width: 100%;
     padding: 0;
-    margin: 0;
+    justify-content: space-around;
+    
 }
 .header-address-list {
     display: none;
@@ -101,13 +102,13 @@ color: var(--navyblue-headlines);
 }
 /*__________________________________mob-menu________________________________________________*/
 .piro-menu {
-    display: block;
-    position: absolute;
-    left: 260px;
-    top: 20px;
+    position: relative;
     border: none;
     background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
     }
+
 .mobile-menu > .container{
     height: 100%;
     display: flex;
@@ -284,12 +285,10 @@ margin-bottom: 72px;
     margin-bottom: 8px;
 }
 .parag{
-align-items: flex-start;
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.2;
-letter-spacing: 0.02em;
+letter-spacing: 0.03em;
 color: var(--layout-paragrph);
 }
 /*_______________ Section 3_______________________ */
@@ -530,8 +529,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: none;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-margin-top: 16px;
-margin-left: 70px;
+margin: 0 auto;
+margin-top: 24px;
 }
 .subscribe-text {
 font-size: 16px;
