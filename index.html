@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,8 +58,8 @@
                 </button>
                 <nav class="mobile-navigation">
                     <ul class="mobile-list list">
-                        <li class="mobile-item"><a href="index.html" class="mobile-link link current" id="studio">Studio</a></li>
-                        <li class="mobile-item"><a href="portfolio.html" class="mobile-link link " id="portfolio">Portfolio</a></li>
+                        <li class="mobile-item"><a href="index.html" class="mobile-link link current">Studio</a></li>
+                        <li class="mobile-item"><a href="portfolio.html" class="mobile-link link ">Portfolio</a></li>
                         <li class="mobile-item"><a href="" class="mobile-link link ">Contacts</a></li>
                     </ul>
                 </nav>
@@ -109,11 +109,7 @@
     </div> 
 </div>
 </div>
-
-
-
 </div>
-
     </header>
     <main>
     <!--Секція 1-->
@@ -174,9 +170,18 @@
         <div class="container">
     <h2 class="photo-text">What are we doing</h2>
     <ul class="photo-list list">
-        <li class="ph-cal"><img src="./images/img-comp.jpg" alt="haircut" width="360"></li>
-        <li class="ph-cal"><img src="./images/img-screen.jpg" alt="haircut" width="360"></li>
-        <li class="ph-cal"><img src="./images/img-phone.jpg" alt="haircut" width="360"></li>
+        <li class="ph-cal">
+        <img
+        srcset="./images/img-comp.jpg 1x, ./images/img-comp.jpg 2x"
+        src="./images/img-comp.jpg" alt="haircut" width="360"></li>
+        <li class="ph-cal">
+        <img 
+        srcset="./images/img-screen.jpg 1x, ./images/img-screen.jpg 2x"
+        src="./images/img-screen.jpg" alt="haircut" width="360"></li>
+        <li class="ph-cal">
+        <img 
+        srcset="./images/img-phone.jpg 1x, ./images/img-phone.jpg 2x"
+        src="./images/img-phone.jpg" alt="haircut" width="360"></li>
     </ul>
     </div>
 </section> 
@@ -186,7 +191,9 @@
     <h2 class="title-our-time">Our Team</h2>
     <ul class="resume-list  list">
         <li class="resume-itm ">
-            <img src="./images/img-mark.jpg" alt="img-mark"
+            <img
+            srcset="./images/img-mark.jpg 1x, ./images/img-mark.jpg 2x "
+            src="./images/img-mark.jpg" alt="img-mark"
             width="264">
             <div class="content-resume">
             <h3 class="resume">Mark Guerrero</h3>
@@ -225,7 +232,9 @@
         </div>
         </li>
         <li class="resume-itm">
-            <img src="./images/img-tom.jpg" alt="img-tom"
+            <img
+            srcset="./images/img-tom.jpg 1x, ./images/img-tom.jpg 2x "
+            src="./images/img-tom.jpg" alt="img-tom"
             width="264">
             <div class="content-resume">
             <h3 class="resume">Tom Ford</h3>
@@ -264,7 +273,9 @@
         </div>
         </li>
         <li class="resume-itm">
-            <img src="./images/img-camila.jpg" alt="img-camila"
+            <img 
+            srcset="./images/img-camila.jpg 1x, ./images/img-camila.jpg 2x "
+            src="./images/img-camila.jpg" alt="img-camila"
             width="264">
             <div class="content-resume">
             <h3 class="resume">Camila Garcia</h3>
@@ -303,7 +314,9 @@
         </div>
         </li>
         <li class="resume-itm">
-            <img src="./images/img-daniel.jpg" alt="img-daniel" 
+            <img 
+            srcset="./images/img-daniel.jpg 1x, ./images/img-daniel.jpg 2x "
+            src="./images/img-daniel.jpg" alt="img-daniel" 
             width="264">
             <div class="content-resume">
             <h3 class="resume">Daniel Wilson</h3>
@@ -511,7 +524,7 @@
     </div>
     </div>
     <script src="./img/js/modal.js"></script>
-    <script src="./img/js/menu.js"></script>
+    <script src="./mobile-menu.js/mobile-menu.js"></script>
     </body>
 </html>
 
