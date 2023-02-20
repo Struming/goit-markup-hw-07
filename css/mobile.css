@@ -47,8 +47,6 @@ margin-bottom: 72px;
     padding-top: 96px;
     padding-bottom: 96px;
     background:var(--cloud);
-    padding-right: 50px;
-    padding-left: 100px;
 }
 
 /* ______________________Section 5 _____________________*/
@@ -60,7 +58,6 @@ margin-bottom: 72px;
     flex-basis: calc((100% - 1 * 16px) / 2);
     }
 /*______________________ footer */
-
 .footer {
     background-color:var(--layout-paragrph);
     padding-top: 96px;
@@ -70,26 +67,12 @@ margin-bottom: 72px;
         width: 100%;
         flex-wrap: wrap;
     }
-
-.footer-logo{
-    margin-left: 140px;
-}
-.footer-parag{
-    margin-left: 70px;
-margin-bottom: 72px;
-}
-.soc{
-margin-left: 80px;
-}
-.button-input-footer{
-margin-left: 30%;
-}
-.imput-title{
-margin-left: 150px;
-}
 .online-footer{
     width: 398px;
     height: 40px;
+}
+.button-input-footer{
+margin-left: 120px;
 }
 /*____________________________ modal __________________________________*/
 .modal {

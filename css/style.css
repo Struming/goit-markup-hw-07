@@ -148,7 +148,7 @@ background-color:var(--ocean);
 }
 .mobile-link {
 font-weight: 700;
-font-size: 26px;
+font-size: 36px;
 line-height: calc(40/36);
 letter-spacing: 0.02em;
 text-transform: capitalize;
@@ -160,7 +160,7 @@ color: var(--modal-f);
 .header-mob-tell {
     font-style: normal;
 font-weight: 600;
-font-size: 25px;
+font-size: 26px;
 line-height: 1.1;
 text-transform: capitalize;
 color: var(--layout-paragrph);
@@ -173,7 +173,7 @@ margin-bottom: 40px;
 .header-mob-gmail {
     font-style: normal;
 font-weight: 500;
-font-size: 15px;
+font-size: 16pxpx;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--layout-paragrph);
@@ -267,16 +267,13 @@ background-color:var(--ocean);
 border-radius: 4px;
 }
 .work-list{
-    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
-    /*margin-left: calc(-1 * var(--set));*/
 }
-
 .work-item{
-/* flex-basis: calc(100% /3 - var(--set) );*/
-/* margin-left: var(--set);*/
 width: 100%;
+margin-bottom: 72px;
 }
 .work-item-title {
     font-weight: 500;
@@ -286,13 +283,14 @@ width: 100%;
     color:var(--navyblue-headlines);
     margin-bottom: 8px;
 }
-.parag {
-    font-weight: 500;
+.parag{
+align-items: flex-start;
+font-style: normal;
+font-weight: 500;
 font-size: 16px;
-line-height: 1.5;
+line-height: 1.2;
 letter-spacing: 0.02em;
-color:var(--layout-paragrph);
-margin-bottom: 72px;
+color: var(--layout-paragrph);
 }
 /*_______________ Section 3_______________________ */
 .ph-cal{
@@ -311,21 +309,17 @@ margin-bottom: 72px;
     padding-top: 96px;
     padding-bottom: 96px;
     background:var(--cloud);
-    padding-right: 15px;
-    padding-left: 15px;
 }
 .resume-itm{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     /*flex-basis: calc(100% / 3 - var(--set));*/
     margin-bottom: 72px;
-    
 }
 .resume-list{
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
     gap: 24px;
-    width: 100%;
-    
 }
 .content-resume {
 padding-right: 16px;
@@ -360,7 +354,6 @@ text-align: center;
 letter-spacing: 0.02em;
 color: var(--layout-paragrph);
 margin-bottom: 8px;
-
 }
 /*______________________ work SVG*/
 .resume-soc-list {
@@ -385,28 +378,25 @@ margin-bottom: 8px;
 .resume-soc-link:is(:hover,:focus) {
     background-color: var(--ocean);
 }
-
 /*______________________ секція 5 */
+.customers-tabule{
+    padding-top: 96px;
+}
 .customers-text{
 font-size: 36px;
 line-height: 1.1;
 text-align: center;
 margin-bottom: 72px;
-
 }
 .customers-list {
     flex-wrap: wrap;
     display: flex;
     gap: 24px;
-    padding-left: 30px;
-    
+    justify-content: center;
 }
 .customers-item {
     /*flex-basis: calc((100% - 5 * 24px) / 6);*/
     margin-bottom: 72px;
-
-    
-    
 }
 .customers-link {
     /*width: 168px;*/
@@ -447,9 +437,6 @@ padding-bottom: 96px;
 color: var(--cloud);
 }
 .footer-logo{
-    margin-left: 30%;
-}
-.footer-logo{
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 18px;
@@ -457,26 +444,23 @@ color: var(--cloud);
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color:var(--iris);
-        padding-top: 24px;
-        padding-bottom: 24px;
-        }
-
-        .colortext-logo {
-        color: var(--navyblue-headlines);
-        }
-
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+.colortext-logo {
+    color: var(--navyblue-headlines);
+}
 .footer-parag {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--paragraph-color-laver);
 margin-top: 16px;
-display: block;
 margin-bottom: 72px;
-margin-left: 20px;
-}
-.soc{
-margin-left: 10%;
+display: block;
+text-align: center;
+justify-content: center;
 }
 .social{
     font-weight: 500;
@@ -485,7 +469,7 @@ margin-left: 10%;
     letter-spacing: 0.02em;
     color: var(--title);
     margin-bottom: 16px;
-    margin-left: 60px;
+    text-align: center;
 }
 .footer-soc-link{
     width: 100%;
@@ -500,6 +484,7 @@ margin-left: 10%;
 .footer-soc-list {
     margin-bottom: 72px;
     display: flex;
+    justify-content: center;
     gap: 24px;
 }
 .footer-soc-item {
@@ -510,15 +495,16 @@ margin-left: 10%;
     background-color: var(--green);
 }
 /*____________________________  __________________________________*/
+.input-footer{
+    text-align: center;
+}
 .imput-title{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--title);
-margin-left: 90px;
 }
-
 .online-footer{
     width: 264px;
     height: 40px;
@@ -529,7 +515,6 @@ margin-left: 90px;
     font-size: 12px;
     background-color: transparent;
     margin-top: 16px;
-    margin-left: 10px;
 }
 .online-footer::placeholder{
     color: rgba(255, 255, 255, 0.6);;
@@ -546,7 +531,7 @@ border-radius: 4px;
 border: none;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 margin-top: 16px;
-margin-left: 50px;
+margin-left: 70px;
 }
 .subscribe-text {
 font-size: 16px;
@@ -693,8 +678,8 @@ margin-bottom: 8px;
     transform: translate(-50%,-50%) scale(0);
 }
 .modal-clous{
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     background:var(--modal-clouse);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;

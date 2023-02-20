@@ -1,16 +1,15 @@
 
 @media screen and (min-width: 1200px) {
     .container{
-    max-width: 1200px;
+    max-width: 1158px;
     }
     /* HEADER */
+    header{
+        border-bottom: 2px solid var(--cloud);
+    }
     .header-container-min{
         display: flex;
         align-items: center;
-        margin-right: auto;
-        border-bottom: 2px solid var(--cloud);
-        margin-left: 130px;
-        margin-right: 50px;
     }
     .header-list {
         display: flex;
@@ -63,9 +62,9 @@
     .portfolio-title{
     color: var(--navyblue-headlines);
     }
-
     .header-address-list {
-        margin-left: 0;
+        display: flex;
+        flex-direction: row;
     }
     .header-gmail {
         font-style: normal;
@@ -83,7 +82,6 @@
         color: var(--iris);
     }
     .header-tell{
-        flex-wrap: wrap;
         font-style: normal;
         font-size: 16px;
         line-height: 1.5;
@@ -103,6 +101,8 @@
 
       /* _____________Section 1 - hero */
 .hero{
+    max-width: 1440px;
+    margin: 0 auto;
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.4 ),
     rgba(46, 47, 66, 0.4 )),
@@ -122,12 +122,12 @@
     line-height: 1.0;
 }
 /* ______________________Section 2 _____________________*/
-    .section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    }
     .work-item{
         flex-basis: calc((100% - 3 * 24px) / 4);
+    }
+    .work-list{
+        display: flex;
+        justify-content: center;
     }
 
     .advant-link {
@@ -135,9 +135,25 @@
     }
     .work-item-title{
     margin-right: 100%;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color:var(--navyblue-headlines);
+        margin-bottom: 8px;
     }
-
+    .parag{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: var(--layout-paragrph);
+    }
 /*_______________ Section 3_______________________ */
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
 .ph-cal{
 flex-basis: calc(100% / 3 - var(--set));
 }
@@ -174,33 +190,73 @@ flex-basis: calc((100% - 5 * 24px) / 6);
 .footer{
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-right: 156px;
 }
 .footer-container{
-    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
-.footer-logo{
-    margin-left: 70px;
-}
-.footer-parag {
-margin-right: 50px;
-    }
 .online-footer{
     margin-right: 24px;
 }
+.footer-logo{
+    text-align: start;
+        justify-content: start;
+        display: flex;
+}
+.colortext {
+    color: var(--cloud);
+    margin-right: 120px;
+    }
+    .footer-parag {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color:var(--paragraph-color-laver);
+        margin-top: 16px;
+        margin-bottom: 72px;
+        display: block;
+        text-align: start;
+        }
+    .soc{
+        margin-right: 80px;
+        margin-left: 120px;
+    }
+    .social{
+        text-align: start;
+    }
+    .input-footer{
+        text-align: start;
+    }
 
-.social{
-margin-left: 0;
-}
 .input-footer{
-    gap: 24px;
-    margin-left: 50px;
-}
-.imput-title{
-    margin-left: 10px;
+    margin-top: 0;
+    margin-right: 0;
     }
 .button-input-footer{
-margin-top:-13%;
+margin-top:-14%;
 }
+/*_____________________________________modal_______________________________*/
 
+.back-modal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50%;
+    background: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+    position: absolute;
+    width: 408px;
+    height: 576px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    background-color:var(--modal);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
     }
