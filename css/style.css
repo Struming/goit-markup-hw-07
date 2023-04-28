@@ -211,7 +211,7 @@ margin-bottom: 48px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.4 ),
         rgba(46, 47, 66, 0.4 )),
-        url(../img/mobail\ \(1\).jpg);
+        url(../img/hero1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -220,13 +220,15 @@ margin-bottom: 48px;
 border: none;
 margin-bottom: 96px;
 }
+
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-    background-image: url(../img/mobile-2x\ \(2\).jpg);
+    background-image: url(../img/hero2x.jpg);
     }
 }
+
 .hero-text {
 font-size: 26px;
 line-height: 1.1;
@@ -547,7 +549,10 @@ gap: 16px;
 .button-list{
     display: flex;
     justify-content: center;
-    gap: var(--set);
+    gap: 24px;
+    margin-top: 40px;
+    margin-top: 20px;
+    
 }
 .button-list-text {
     padding: 12px 24px;
